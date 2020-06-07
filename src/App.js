@@ -1,5 +1,5 @@
 import React from 'react'; /* Importing React */
-import Todos from './components/Todos.js' /* Importing Todos component */
+import Todos from './components/todos/Todos.js' /* Importing Todos component */
 
 import './App.css'; /* Importing App.css */
 
@@ -23,7 +23,7 @@ class App extends React.Component {
       }
     ]
   }
-
+  //Mark Item Complete
   markComplete = (id) => {
     this.setState({ todos: this.state.todos.map(todo => {
       if(todo.id === id) {
@@ -33,10 +33,15 @@ class App extends React.Component {
     })})
 }
 
+  //Delete Todo Item
+  delTodo = (id) => {
+    this.setState({todos: [...this.state.todos.filter(todo => todo.id !== id)]})
+}
+
     render() {
       return (
         <div className="App">
-            <Todos todos={this.state.todos} markComplete={this.markComplete} />
+            <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
         </div>
       );
   }
