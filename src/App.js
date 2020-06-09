@@ -2,7 +2,7 @@ import React from 'react'; /* Importing React */
 import Header from './components/layout/header.js' /* Importing Header Component */
 import AddTodo from './components/todos/AddTodo' /* Importing AddTodo Component */
 import Todos from './components/todos/Todos.js' /* Importing Todos component */
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid'; /* Importing uuid */
 
 import './App.css'; /* Importing App.css */
 
