@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types';
+import React, { Component } from 'react' /* Importing React */
+import PropTypes from 'prop-types'; /* Importing Proptypes */
 
 export class TodoItem extends Component {
     getStyle = () => {

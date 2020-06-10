@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react' /* Importing React */
 
 export class AddTodo extends Component {
     state = {

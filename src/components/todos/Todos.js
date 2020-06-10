@@ -1,6 +1,6 @@
-import React from 'react';
-import TodoItem from '../todos/TodoItem.js';
-import PropTypes from 'prop-types';
+import React from 'react'; /* Importing React */
+import TodoItem from '../todos/TodoItem.js'; /* Importing TodoItem Component */
+import PropTypes from 'prop-types'; /* Importing Proptypes */
 
 class Todos extends React.Component {
     markComplete = () => {
